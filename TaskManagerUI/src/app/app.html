@@ -1,0 +1,19 @@
+<div class="row">
+<table>
+  <thead>
+    <td>Id</td>
+    <td>Title</td>
+    <td>Description</td>
+  </thead>
+  <tbody>
+    @for(c of store$ | async; track c.id)
+  {
+    <tr>
+      <td>{{c.id}}</td>
+       <td>{{c.title}}</td>
+        <td>{{c.description}}</td>
+    </tr>
+  }
+  </tbody>
+</table>
+</div>
